@@ -1,0 +1,2 @@
+<!-- Declate above bean in your applicationContext.xml file as shown below: -->
+<bean id="applicationContextProvder" class="com.java2novice.spring.ApplicationContextProvider" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 通过scope="prototype"界定该bean是多例(非单例)的 -->
+	<bean id="asyncCommand" class="com.flysnow.injection.command.AsyncCommand"
+		scope="prototype"></bean>
+	<bean id="commandManager" class="com.flysnow.injection.CommandManager">
+	</bean>
+</beans>  
