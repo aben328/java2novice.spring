@@ -7,7 +7,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>java2novice.spring.helloworld</module>
+		<module>java2novice.spring.configuration</module>
 		<module>java2novice.spring.03context</module>
+		<module>java2novice.spring.import</module>
 	</modules>
 
 	<build>

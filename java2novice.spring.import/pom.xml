@@ -6,6 +6,6 @@
 		<artifactId>java2novice.spring</artifactId>
 		<version>1.0</version>
 	</parent>
-	<artifactId>java2novice.spring.03context</artifactId>
-	<description>How to get spring application context object reference?</description>
+	<artifactId>java2novice.spring.import</artifactId>
+	<description>Spring java based configuration @Import example</description>
 </project>
