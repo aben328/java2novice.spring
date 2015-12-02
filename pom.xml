@@ -25,6 +25,14 @@
 		<module>java2novice.spring.14DefaultInitiaDestroy</module>
 		<module>java2novice.spring.15InitDestroyByAnno</module>
 		<module>java2novice.spring.16BeanPostProcessors</module>
+		<module>java2novice.spring.17ReadPropertyFile</module>
+		<module>java2novice.spring.18ReadPropertyFileInSpring3</module>
+		<module>java2novice.spring.19InjectDateIntoBeanProperty</module>
+		<module>
+			java2novice.spring.20InjectDateWithCustomDateEditor
+		</module>
+		<module>java2novice.spring.21InheritanceConfiguration</module>
+		<module>java2novice.spring.22RequiredAnnotation</module>
 	</modules>
 
 	<build>

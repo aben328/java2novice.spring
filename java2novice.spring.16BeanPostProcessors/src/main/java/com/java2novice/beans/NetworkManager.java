@@ -19,7 +19,6 @@ public class NetworkManager {
 
 	@PostConstruct
 	public void init() {
-
 		System.out.println("Inside init() method...");
 		URL obj;
 		try {
