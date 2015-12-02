@@ -1,0 +1,19 @@
+<!--Here is the sample spring bean configuration file: we must specify constructor 
+	input parameter type. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="articleBean" class="com.java2novice.bean.Article">
+
+		<constructor-arg type="java.lang.String">
+			<value>Java2novice article</value>
+		</constructor-arg>
+
+		<constructor-arg type="int">
+			<value>120</value>
+		</constructor-arg>
+	</bean>
+</beans>

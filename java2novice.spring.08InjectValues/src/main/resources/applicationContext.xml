@@ -1,0 +1,14 @@
+<!--Here is the spring bean xml based configuration file, using property 
+	tag, we are injecting the values: -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="employeeBean" class="com.java2novice.bean.Employee">
+		<property name="empId" value="1016" />
+		<property name="name" value="Nataraj" />
+		<property name="role" value="Manager" />
+	</bean>
+</beans>

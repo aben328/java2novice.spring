@@ -1,0 +1,20 @@
+<!--Here is the xml based inner bean injection, note that when you are using 
+	inner bean configuration, bean id is not required. The approach is same for 
+	setter based injection. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="paymentGwBean" class="com.java2novice.beans.PaymentGateway">
+		<constructor-arg>
+			<!-- ***** -->
+			<bean class="com.java2novice.beans.Order">
+				<property name="item" value="Java2Novice" />
+				<property name="price" value="RS 22.50" />
+				<property name="address" value="Bangalore" />
+			</bean>
+		</constructor-arg>
+	</bean>
+</beans>

@@ -15,6 +15,11 @@
 		<module>java2novice.spring.05DIViaSetter</module>
 		<module>java2novice.spring.DiViaConstructor</module>
 		<module>java2novice.spring.06DiViaConstructor</module>
+		<module>java2novice.spring.07DiViaTwoConstructor</module>
+		<module>java2novice.spring.08InjectValues</module>
+		<module>java2novice.spring.09InjectInnerBean</module>
+		<module>java2novice.spring.10ScopeAnnotation</module>
+		<module>java2novice.spring.11InitAndDestroy</module>
 	</modules>
 
 	<build>
