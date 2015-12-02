@@ -15,6 +15,7 @@ public class SpringDemo {
 
 	public static void main(String a[]) {
 		String confFile = "applicationContext.xml";
+		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext(confFile);
 		PaymentGateway gateway = (PaymentGateway) context.getBean("paymentGwBean");
 		gateway.processOrder();

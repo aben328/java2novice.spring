@@ -15,6 +15,7 @@ public class SpringDemo {
 
 	public static void main(String a[]) {
 		String confFile = "applicationContext.xml";
+		@SuppressWarnings("resource")
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(confFile);
 		Employee myEmp = (Employee) context.getBean("myEmployee");
 		myEmp.testMe();
