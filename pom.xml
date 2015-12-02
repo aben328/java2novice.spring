@@ -10,6 +10,11 @@
 		<module>java2novice.spring.configuration</module>
 		<module>java2novice.spring.03context</module>
 		<module>java2novice.spring.import</module>
+		<module>java2novice.spring.05DependencyInjectionByType</module>
+		<module>java2novice.spring.05DependencyInjectionAndType</module>
+		<module>java2novice.spring.05DIViaSetter</module>
+		<module>java2novice.spring.DiViaConstructor</module>
+		<module>java2novice.spring.06DiViaConstructor</module>
 	</modules>
 
 	<build>

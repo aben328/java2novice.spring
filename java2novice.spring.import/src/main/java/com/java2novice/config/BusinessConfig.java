@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.java2novice.bean.MyBusinessService;
 
-// See more at:http:// java2novice.com/spring/java-based-config-import/#sthash.KIi0yRzF.dpuf
+// See more at:http://java2novice.com/spring/java-based-config-import/#sthash.KIi0yRzF.dpuf
 @Configuration
 public class BusinessConfig {
 
