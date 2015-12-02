@@ -22,6 +22,9 @@
 		<module>java2novice.spring.11InitAndDestroy</module>
 		<module>java2novice.spring.12InitCallback</module>
 		<module>java2novice.spring.13DestructionCallback</module>
+		<module>java2novice.spring.14DefaultInitiaDestroy</module>
+		<module>java2novice.spring.15InitDestroyByAnno</module>
+		<module>java2novice.spring.16BeanPostProcessors</module>
 	</modules>
 
 	<build>

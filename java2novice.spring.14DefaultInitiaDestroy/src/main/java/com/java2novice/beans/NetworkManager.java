@@ -5,16 +5,16 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
 /**
- * We will initialize our resources during spring bean creation. We need to close all the opened resources just before
- * killing the spring bean, all clean up related code will be part of destroy method. You can achieve this by
- * implementing org.springframework.beans.factory.DisposableBean interface with in your spring bean. You need to
- * implement destroy() method with in your spring bean and move all of your clean up code with in destroy() method.
+ * In case, if you have many spring beans with initialization and destory method, then you need to define init-method
+ * and destroy-method on each individual spring bean. Spring provides an alternative and flexible way to configure this.
+ * You can define only once with same method signature and you can use across all spring beans. You need to configure
+ * default-init-method and default-destroy-method attributes on the <beans> element. This example shows how to configure
+ * it.
+ * @author java2novice
+ * @date 2015年12月2日下午5:33:14
  */
-public class NetworkManager implements InitializingBean, DisposableBean {
+public class NetworkManager {
 
 	private HttpURLConnection connection;
 	private String urlStr;
@@ -23,9 +23,9 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 		this.urlStr = urlStr;
 	}
 
-	public void afterPropertiesSet() {
+	public void init() {
 
-		System.err.println("Inside init() method...");
+		System.out.println("Inside init() method...");
 		URL obj;
 		try {
 			obj = new URL(this.urlStr);
@@ -42,7 +42,7 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 
 	public void destroy() {
 		try {
-			System.err.println("Inside destroy() method...");
+			System.out.println("Inside destroy() method...");
 			if (this.connection != null) {
 				connection.disconnect();
 			}
@@ -54,7 +54,7 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 	public void readData() {
 		try {
 			int responseCode = this.connection.getResponseCode();
-			System.err.println("Response code: " + responseCode);
+			System.out.println("Response code: " + responseCode);
 			/**
 			 * do your business logic here
 			 */

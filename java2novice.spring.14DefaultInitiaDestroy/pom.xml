@@ -6,6 +6,6 @@
 		<artifactId>java2novice.spring</artifactId>
 		<version>1.0</version>
 	</parent>
-	<artifactId>java2novice.spring.13DestructionCallback</artifactId>
-	<description>Spring bean destruction callback</description>
+	<artifactId>java2novice.spring.14DefaultInitiaDestroy</artifactId>
+	<description>Configure default initialization and destroy methods in all spring beans </description>
 </project>

@@ -5,16 +5,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-/**
- * We will initialize our resources during spring bean creation. We need to close all the opened resources just before
- * killing the spring bean, all clean up related code will be part of destroy method. You can achieve this by
- * implementing org.springframework.beans.factory.DisposableBean interface with in your spring bean. You need to
- * implement destroy() method with in your spring bean and move all of your clean up code with in destroy() method.
- */
-public class NetworkManager implements InitializingBean, DisposableBean {
+public class NetworkManager {
 
 	private HttpURLConnection connection;
 	private String urlStr;
@@ -23,9 +17,10 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 		this.urlStr = urlStr;
 	}
 
-	public void afterPropertiesSet() {
+	@PostConstruct
+	public void init() {
 
-		System.err.println("Inside init() method...");
+		System.out.println("Inside init() method...");
 		URL obj;
 		try {
 			obj = new URL(this.urlStr);
@@ -40,9 +35,10 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 		}
 	}
 
+	@PreDestroy
 	public void destroy() {
 		try {
-			System.err.println("Inside destroy() method...");
+			System.out.println("Inside destroy() method...");
 			if (this.connection != null) {
 				connection.disconnect();
 			}
@@ -54,7 +50,7 @@ public class NetworkManager implements InitializingBean, DisposableBean {
 	public void readData() {
 		try {
 			int responseCode = this.connection.getResponseCode();
-			System.err.println("Response code: " + responseCode);
+			System.out.println("Response code: " + responseCode);
 			/**
 			 * do your business logic here
 			 */
