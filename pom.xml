@@ -20,6 +20,8 @@
 		<module>java2novice.spring.09InjectInnerBean</module>
 		<module>java2novice.spring.10ScopeAnnotation</module>
 		<module>java2novice.spring.11InitAndDestroy</module>
+		<module>java2novice.spring.12InitCallback</module>
+		<module>java2novice.spring.13DestructionCallback</module>
 	</modules>
 
 	<build>
