@@ -61,6 +61,8 @@
 		<module>java2novice.spring.38AutoWiringByQualifier</module>
 		<module>java2novice.spring.39Log4jConfiguration</module>
 		<module>java2novice.spring.40ScheduledJobs</module>
+		<module>java2novice.spring.41SendEmail</module>
+		<module>java2novice.spring.42SendEmailWithAttachment</module>
 	</modules>
 
 	<build>

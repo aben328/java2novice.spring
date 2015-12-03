@@ -1,0 +1,6 @@
+This page gives step by step instructions to send email with attachement using spring 3. 
+This example uses org.springframework.mail.javamail.JavaMailSender interface to send email.
+
+Here is the maven pom.xml file with required dependencies:
+
+test
