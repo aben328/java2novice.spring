@@ -1,0 +1,24 @@
+<!-- Here is the xml based configuration file, the spring expression language 
+	is enclosed with in "#{ expression language }", watch below configuraton 
+	file closely. We are directly injecting values to the bean "beanOrder". -->
+
+<!-- In the below xml, the expression language #{beanOrder} assigns "beanOrder" 
+	reference to order property, and #{beanOrder.item} assigns beanOrder item 
+	name to item property. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="beanOrder" class="com.java2novice.beans.Order">
+		<property name="item" value="Java Book" />
+		<property name="price" value="Rs 22.50" />
+		<property name="address" value="India" />
+	</bean>
+
+	<bean id="paymentGateway" class="com.java2novice.beans.PaymentGateway">
+		<property name="itemName" value="#{beanOrder.item}" />
+		<property name="order" value="#{beanOrder}" />
+	</bean>
+</beans>

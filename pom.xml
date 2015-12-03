@@ -6,10 +6,10 @@
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>java2novice.spring.helloworld</module>
-		<module>java2novice.spring.configuration</module>
+		<module>java2novice.spring.01helloworld</module>
+		<module>java2novice.spring.02configuration</module>
 		<module>java2novice.spring.03context</module>
-		<module>java2novice.spring.import</module>
+		<module>java2novice.spring.04import</module>
 		<module>java2novice.spring.05DependencyInjectionByType</module>
 		<module>java2novice.spring.05DependencyInjectionAndType</module>
 		<module>java2novice.spring.05DIViaSetter</module>
@@ -33,6 +33,27 @@
 		</module>
 		<module>java2novice.spring.21InheritanceConfiguration</module>
 		<module>java2novice.spring.22RequiredAnnotation</module>
+		<module>java2novice.spring.23DefineRequiredAnno</module>
+		<module>java2novice.spring.24InjectList</module>
+		<module>java2novice.spring.25InjectMap</module>
+		<module>java2novice.spring.26AutoComponentScanning</module>
+		<module>java2novice.spring.27FilterComponents</module>
+		<module>java2novice.spring.28ExpressionLanguage</module>
+		<module>java2novice.spring.29ExpressionLanguage2</module>
+		<module>java2novice.spring.30ExpressionLanguage3</module>
+		<module>java2novice.spring.31ExpressionLanguage4</module>
+		<module>
+			java2novice.spring.32ExpressionLanguageTernaryOperator
+		</module>
+		<module>
+			java2novice.spring.33ExpressionLanguageRegularOperator
+		</module>
+		<module>
+			java2novice.spring.33ExpressionLanguageCollections
+		</module>
+		<module>
+			java2novice.spring.34ExpressionLanguageCollections
+		</module>
 	</modules>
 
 	<build>

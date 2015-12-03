@@ -1,0 +1,41 @@
+<!-- Here is the xml based configuration, which includes a filter to include -->
+<!-- components, the filter is specified using "include-filter" tag. Note -->
+<!-- that below filtering components based on regular expression, and -->
+<!-- annotation based. Below xml configuration including all Components -->
+<!-- annotated with @Component annotation and any class containing "Service" -->
+<!-- String. -->
+
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" -->
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" -->
+<!-- xsi:schemaLocation="http://www.springframework.org/schema/beans -->
+<!-- http://www.springframework.org/schema/beans/spring-beans-3.0.xsd -->
+<!-- http://www.springframework.org/schema/context -->
+<!-- http://www.springframework.org/schema/context/spring-context-3.0.xsd"> -->
+
+<!-- <context:component-scan base-package="com.java2novice"> -->
+<!-- <context:include-filter type="regex" -->
+<!-- expression="com.java2novice.service.*Service.*" /> -->
+<!-- <context:include-filter type="annotation" -->
+<!-- expression="org.springframework.stereotype.Component" /> -->
+<!-- </context:component-scan> -->
+<!-- </beans> -->
+
+
+<!-- Now we will see example for how to exclude few components from auto -->
+<!-- scanning. In the below xml based configuration file, we are excluding -->
+<!-- few components by using "exclude-filter" tag type. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:component-scan base-package="com.java2novice">
+		<context:exclude-filter type="regex"
+			expression="com.java2novice.service.*Service.*" />
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Component" />
+	</context:component-scan>
+</beans>

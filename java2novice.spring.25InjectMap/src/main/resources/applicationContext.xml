@@ -1,0 +1,19 @@
+<!-- Xml based configuration file file shows how to inject List into the 
+	spring bean: -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="filmDirectors" class="com.java2novice.beans.FilmDirectors">
+		<property name="directorMap">
+			<map>
+				<entry key="1" value="RajaMouli" />
+				<entry key="2" value="Steven Spielberg" />
+				<entry key="3" value="Martin Scorsese" />
+				<entry key="4" value="Alfred Hitchcock" />
+			</map>
+		</property>
+	</bean>
+</beans>
