@@ -54,6 +54,13 @@
 		<module>
 			java2novice.spring.34ExpressionLanguageCollections
 		</module>
+		<module>java2novice.spring.35AutoWiringByType</module>
+		<module>java2novice.spring.35AutoWiringByConstructor</module>
+		<module>java2novice.spring.36AutoWiringByConstructor</module>
+		<module>java2novice.spring.37AutoWiringByAutowired</module>
+		<module>java2novice.spring.38AutoWiringByQualifier</module>
+		<module>java2novice.spring.39Log4jConfiguration</module>
+		<module>java2novice.spring.40ScheduledJobs</module>
 	</modules>
 
 	<build>
