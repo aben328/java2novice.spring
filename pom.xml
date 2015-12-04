@@ -63,6 +63,12 @@
 		<module>java2novice.spring.40ScheduledJobs</module>
 		<module>java2novice.spring.41SendEmail</module>
 		<module>java2novice.spring.42SendEmailWithAttachment</module>
+		<module>java2novice.spring.43SimpleSpringJDBC</module>
+		<module>java2novice.spring.44JdbcTemplate</module>
+		<module>java2novice.spring.45JdbcDaoSupport</module>
+		<module>java2novice.spring.46QueryByJdbcDaoSupport</module>
+		<module>java2novice.spring.47QuerySingleByJdbcTemplate</module>
+		<module>java2novice.spring.48JDBCBatchUpdates</module>
 	</modules>
 
 	<build>
