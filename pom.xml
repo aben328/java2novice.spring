@@ -69,6 +69,7 @@
 		<module>java2novice.spring.46QueryByJdbcDaoSupport</module>
 		<module>java2novice.spring.47QuerySingleByJdbcTemplate</module>
 		<module>java2novice.spring.48JDBCBatchUpdates</module>
+		<module>java2novice.spring.49AOPAdvicesBeforeAdvice</module>
 	</modules>
 
 	<build>

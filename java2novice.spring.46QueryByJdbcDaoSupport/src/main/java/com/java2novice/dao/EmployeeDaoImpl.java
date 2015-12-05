@@ -18,23 +18,22 @@ import com.java2novice.model.Employee;
  */
 public class EmployeeDaoImpl extends JdbcDaoSupport implements EmployeeDao {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public Employee findEmployeeById(int empId) {
 		Employee emp = null;
 		String query = "select * from employee where empId=?";
 		Object[] inputs = new Object[] { empId };
-		emp = (Employee) getJdbcTemplate().queryForObject(query, inputs, new BeanPropertyRowMapper(Employee.class));
+		emp = (Employee) getJdbcTemplate().queryForObject(query, inputs,
+				new BeanPropertyRowMapper<Employee>(Employee.class));
 		return emp;
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public List<Employee> findAllEmployees() {
 
 		List<Employee> empList = new ArrayList<Employee>();
 		String query = "select * from employee";
-		empList = getJdbcTemplate().query(query, new BeanPropertyRowMapper(Employee.class));
+		empList = getJdbcTemplate().query(query, new BeanPropertyRowMapper<Employee>(Employee.class));
 		return empList;
 	}
 }
