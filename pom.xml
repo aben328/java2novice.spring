@@ -70,6 +70,7 @@
 		<module>java2novice.spring.47QuerySingleByJdbcTemplate</module>
 		<module>java2novice.spring.48JDBCBatchUpdates</module>
 		<module>java2novice.spring.49AOPAdvicesBeforeAdvice</module>
+		<module>java2novice.spring.50AOPAfterReturnAdvice</module>
 	</modules>
 
 	<build>
