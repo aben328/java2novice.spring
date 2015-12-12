@@ -71,6 +71,16 @@
 		<module>java2novice.spring.48JDBCBatchUpdates</module>
 		<module>java2novice.spring.49AOPAdvicesBeforeAdvice</module>
 		<module>java2novice.spring.50AOPAfterReturnAdvice</module>
+		<module>java2novice.spring.51AOPAfterReturnThrow</module>
+		<module>java2novice.spring.52AOPAroundAdvice</module>
+		<module>java2novice.spring.53AOPPointcutsNameMatch</module>
+		<module>
+			java2novice.spring.54AOPPointcutsRegularExpression
+		</module>
+		<module>java2novice.spring.55AOPAspectJAfter</module>
+		<module>java2novice.spring.56AOPAspectJAfterReturning</module>
+		<module>java2novice.spring.57AOPAspectJAfterThrowing</module>
+		<module>java2novice.spring.58AOPAspectJAround</module>
 	</modules>
 
 	<build>

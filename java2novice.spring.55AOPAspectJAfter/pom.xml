@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>java2novice.spring</groupId>
+		<artifactId>java2novice.spring</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>java2novice.spring.55AOPAspectJAfter</artifactId>
+	<description>Spring AOP - AspectJ - @After example
+	Last few pages talked about spring advices (before advice, after return advice, around advice and pointcut examples). In this page you will get an idea about how to integrate AspectJ annotations with Spring AOP framework. Using spring AOP and AspectJ, you can easily intercept methods.
+
+AspectJ comes with below annotations:
+
+1) @Before 
+2) @After 
+3) @AfterReturning 
+4) @AfterThrowing 
+5) @Around
+
+In this page we will see an example for @After annotation. @After annotation intercepts method after calling it.
+
+pom.xml file gives all required dependencies: Add dependencies for spring-aop jar, aspectjrt jar and aspectjweaver jar file.
+
+- See more at: http://java2novice.com/spring/aop-aspectj-after-annotation/#sthash.uNqOJHSF.dpuf
+	</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.1</version>
+		</dependency>
+	</dependencies>
+</project>
